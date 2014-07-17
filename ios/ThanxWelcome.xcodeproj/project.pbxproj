@@ -18,6 +18,10 @@
 		4948C7AD191D88E5006A6618 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4948C7A7191D88E5006A6618 /* Images.xcassets */; };
 		4948C7AE191D88E5006A6618 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4948C7A9191D88E5006A6618 /* LoginViewController.xib */; };
 		495EE1BC191DA5E800EAD654 /* THXBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 495EE1BB191DA5E800EAD654 /* THXBeaconManager.m */; };
+		4966271C1977BDC300AB6B86 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4966271B1977BDC300AB6B86 /* NotificationCenter.framework */; };
+		496627221977BDC300AB6B86 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496627211977BDC300AB6B86 /* TodayViewController.m */; };
+		496627241977BDC300AB6B86 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496627231977BDC300AB6B86 /* MainInterface.storyboard */; };
+		496627271977BDC300AB6B86 /* StatsWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4966271A1977BDC300AB6B86 /* StatsWidget.appex */; };
 		49832010191D76B500498FDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4983200F191D76B500498FDD /* Foundation.framework */; };
 		49832012191D76B500498FDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49832011191D76B500498FDD /* CoreGraphics.framework */; };
 		49832014191D76B500498FDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49832013191D76B500498FDD /* UIKit.framework */; };
@@ -26,6 +30,37 @@
 		9DAC94EB191DBD04009A358E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC94EA191DBD04009A358E /* MainViewController.xib */; };
 		DA258A19F4C94F6FBB95910B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4010AEBF1D964D90934D8349 /* libPods.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		496627251977BDC300AB6B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49832004191D76B500498FDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496627191977BDC300AB6B86;
+			remoteInfo = StatsWidget;
+		};
+		496627281977BDC300AB6B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49832004191D76B500498FDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496627191977BDC300AB6B86;
+			remoteInfo = StatsWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4966272D1977BDC300AB6B86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				496627271977BDC300AB6B86 /* StatsWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4010AEBF1D964D90934D8349 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +80,12 @@
 		4948C7A9191D88E5006A6618 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		495EE1BA191DA5E800EAD654 /* THXBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THXBeaconManager.h; sourceTree = "<group>"; };
 		495EE1BB191DA5E800EAD654 /* THXBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THXBeaconManager.m; sourceTree = "<group>"; };
+		4966271A1977BDC300AB6B86 /* StatsWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatsWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4966271B1977BDC300AB6B86 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4966271F1977BDC300AB6B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496627201977BDC300AB6B86 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		496627211977BDC300AB6B86 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		496627231977BDC300AB6B86 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		4983200C191D76B500498FDD /* ThanxWelcome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThanxWelcome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4983200F191D76B500498FDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49832011191D76B500498FDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +100,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		496627171977BDC300AB6B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4966271C1977BDC300AB6B86 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49832009191D76B500498FDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,12 +226,32 @@
 			path = THXBeacon;
 			sourceTree = "<group>";
 		};
+		4966271D1977BDC300AB6B86 /* StatsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				496627201977BDC300AB6B86 /* TodayViewController.h */,
+				496627211977BDC300AB6B86 /* TodayViewController.m */,
+				496627231977BDC300AB6B86 /* MainInterface.storyboard */,
+				4966271E1977BDC300AB6B86 /* Supporting Files */,
+			);
+			path = StatsWidget;
+			sourceTree = "<group>";
+		};
+		4966271E1977BDC300AB6B86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4966271F1977BDC300AB6B86 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		49832003191D76B500498FDD = {
 			isa = PBXGroup;
 			children = (
 				4948C777191D7DB0006A6618 /* Classes */,
 				4948C7A5191D88E5006A6618 /* Resources */,
 				4948C79F191D88E5006A6618 /* Other Sources */,
+				4966271D1977BDC300AB6B86 /* StatsWidget */,
 				4983200E191D76B500498FDD /* Frameworks */,
 				4983200D191D76B500498FDD /* Products */,
 				4E3C07A39B944A4192EBDCB0 /* Pods.xcconfig */,
@@ -193,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				4983200C191D76B500498FDD /* ThanxWelcome.app */,
+				4966271A1977BDC300AB6B86 /* StatsWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +277,7 @@
 				49832013191D76B500498FDD /* UIKit.framework */,
 				49832028191D76B600498FDD /* XCTest.framework */,
 				4010AEBF1D964D90934D8349 /* libPods.a */,
+				4966271B1977BDC300AB6B86 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,6 +303,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		496627191977BDC300AB6B86 /* StatsWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4966272C1977BDC300AB6B86 /* Build configuration list for PBXNativeTarget "StatsWidget" */;
+			buildPhases = (
+				496627161977BDC300AB6B86 /* Sources */,
+				496627171977BDC300AB6B86 /* Frameworks */,
+				496627181977BDC300AB6B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatsWidget;
+			productName = StatsWidget;
+			productReference = 4966271A1977BDC300AB6B86 /* StatsWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4983200B191D76B500498FDD /* ThanxWelcome */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49832038191D76B600498FDD /* Build configuration list for PBXNativeTarget "ThanxWelcome" */;
@@ -241,10 +329,13 @@
 				49832009191D76B500498FDD /* Frameworks */,
 				4983200A191D76B500498FDD /* Resources */,
 				195E4773CFC94FF5896F26B4 /* Copy Pods Resources */,
+				4966272D1977BDC300AB6B86 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				496627261977BDC300AB6B86 /* PBXTargetDependency */,
+				496627291977BDC300AB6B86 /* PBXTargetDependency */,
 			);
 			name = ThanxWelcome;
 			productName = ThanxWelcome;
@@ -259,6 +350,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Thanx;
+				TargetAttributes = {
+					496627191977BDC300AB6B86 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
 			};
 			buildConfigurationList = 49832007191D76B500498FDD /* Build configuration list for PBXProject "ThanxWelcome" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -273,11 +369,20 @@
 			projectRoot = "";
 			targets = (
 				4983200B191D76B500498FDD /* ThanxWelcome */,
+				496627191977BDC300AB6B86 /* StatsWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		496627181977BDC300AB6B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496627241977BDC300AB6B86 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4983200A191D76B500498FDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +431,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		496627161977BDC300AB6B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496627221977BDC300AB6B86 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49832008191D76B500498FDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +455,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		496627261977BDC300AB6B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496627191977BDC300AB6B86 /* StatsWidget */;
+			targetProxy = 496627251977BDC300AB6B86 /* PBXContainerItemProxy */;
+		};
+		496627291977BDC300AB6B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496627191977BDC300AB6B86 /* StatsWidget */;
+			targetProxy = 496627281977BDC300AB6B86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		4948C7A0191D88E5006A6618 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -354,6 +480,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4966272A1977BDC300AB6B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StatsWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4966272B1977BDC300AB6B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = StatsWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		49832036191D76B600498FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -455,6 +613,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4966272C1977BDC300AB6B86 /* Build configuration list for PBXNativeTarget "StatsWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4966272A1977BDC300AB6B86 /* Debug */,
+				4966272B1977BDC300AB6B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		49832007191D76B500498FDD /* Build configuration list for PBXProject "ThanxWelcome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
