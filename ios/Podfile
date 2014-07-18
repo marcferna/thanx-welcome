@@ -12,3 +12,7 @@ pod 'EstimoteSDK', git: "https://github.com/Estimote/iOS-SDK.git", commit: "6254
 # AFNetworking - A delightful iOS and OS X networking framework
 #  https://github.com/AFNetworking/AFNetworking
 pod 'AFNetworking', '~> 2.3.1'
+
+# SSKeychain - Simple Cocoa wrapper for the keychain that works on Mac and iOS.
+#  https://github.com/soffes/sskeychain
+pod 'SSKeychain', '~> 1.2'

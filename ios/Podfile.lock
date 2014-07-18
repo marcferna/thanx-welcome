@@ -21,10 +21,12 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - EstimoteSDK (2.0.0)
+  - SSKeychain (1.2.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.3.1)
   - EstimoteSDK (from `https://github.com/Estimote/iOS-SDK.git`, commit `625440460b8d73adf321a1c9c4be9b6f19759bd9`)
+  - SSKeychain (~> 1.2)
 
 EXTERNAL SOURCES:
   EstimoteSDK:
@@ -34,5 +36,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
   EstimoteSDK: 3a8a2059a2a5849049d434f6c8113dcd4b3e15bb
+  SSKeychain: cc48bd3ad24fcd9125adb9e0d23dd50b8bbd08b9
 
 COCOAPODS: 0.33.1
