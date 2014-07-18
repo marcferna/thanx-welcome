@@ -7,14 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
-#import "LoginViewController.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
 @property (nonatomic, strong) UIViewController *currentViewController;
-@property (nonatomic, strong) MainViewController *mainViewController;
-@property (nonatomic, strong) LoginViewController *loginViewController;
+@property (nonatomic, strong) RootViewController *rootViewController;
 @property (strong, nonatomic) THXBeaconManager *beaconManager;
 
 - (void)updateRootViewController;
@@ -29,10 +27,11 @@
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
 
-  [self.window setRootViewController:self.currentViewController];
+  self.rootViewController = [[RootViewController alloc] init];
+  [self.window setRootViewController:self.rootViewController];
 
   // Listen to notification of user removing email
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateRootViewController) name:UserDidRemoveEmail object:nil];
+  //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateRootViewController) name:UserDidRemoveEmail object:nil];
   
   self.beaconManager = [[THXBeaconManager alloc] init];
 
@@ -73,21 +72,6 @@
                      options:UIViewAnimationOptionTransitionCrossDissolve
                   animations:^{ [self.window setRootViewController:self.currentViewController]; }
                   completion:nil];;
-}
-
-- (UIViewController *)currentViewController
-{
-  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-  NSString *email = [defaults valueForKey:@"email"];
-  
-  if (!email) {
-    self.loginViewController = [[LoginViewController alloc] init];
-    return self.loginViewController;
-  }
-  else {
-    self.mainViewController = [[MainViewController alloc] init];
-    return self.mainViewController;
-  }
 }
 
 @end

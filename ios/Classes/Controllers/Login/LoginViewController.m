@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import <SSKeychain.h>
 
 @interface LoginViewController ()
 - (IBAction)onSubmitButtonClick:(id)sender;
@@ -28,21 +29,18 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view.
   self.emailTextFieldContainer.backgroundColor = [UIColor colorWithRed:.9 green:.9 blue:.9 alpha:0.25];
+  self.emailField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
-  self.emailField.delegate = self;
 }
 
 #pragma mark IBAction Methods
 - (IBAction)onSubmitButtonClick:(id)sender {
-
-  [NSUserDefaults.standardUserDefaults setValue:self.emailField.text forKey:@"email"];
-  [NSUserDefaults.standardUserDefaults synchronize];
-  MainViewController *mainViewController = [[MainViewController alloc] init];
-  [self presentViewController:mainViewController animated:YES completion:^{}];
-  
+  NSError *error;
+  [SSKeychain setPassword:@"" forService:@"WelcomeService" account:self.emailField.text error:&error];
+  NSLog(@"@%", error);
 }
 
 #pragma mark - UITextViewDelegate Methods
